@@ -28,7 +28,7 @@ jobs:
         id: bump-semver
         with:
           current_version: ${{ steps.latest-tag.outputs.tag }}
-          level: minor
+          level: patch
 
       - name: Create Release Notes
         id: create-release
