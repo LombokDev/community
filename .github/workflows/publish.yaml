@@ -1,4 +1,4 @@
-name: "On Merge to release branch: compile and publish"
+name: "On Merge to publish branch: compile and publish"
 
 concurrency:
   group: release-${{ github.ref }}
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - release
+      - publish
 
 jobs:
   release:
